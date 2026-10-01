@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Doreen Atsem, an aspiring full-stack developer working with HTML, CSS, JavaScript, PHP and MySQL.">
+    <title>Doreen Atsem | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a href="#home" class="brand">Doreen Atsem</a>
+            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme">Dark mode</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="hero-hi">Hi, I'm</p>
+                    <h1>Doreen Atsem</h1>
+                    <p class="hero-role">Aspiring Full-Stack Developer</p>
+                    <p class="hero-intro">I build responsive, user-friendly web applications while continuously
+                        developing my skills in frontend and backend technologies.</p>
+                    <div class="btn-row">
+                        <a href="#projects" class="btn btn-primary">View my projects</a>
+                        <a href="#contact" class="btn btn-ghost">Contact me</a>
+                    </div>
+                </div>
+                <aside class="terminal" aria-label="Current learning focus">
+                    <div class="terminal-bar"><span></span><span></span><span></span></div>
+                    <pre><code><span class="c">// currently building with</span>
+const doreen = {
+  frontend: ["HTML", "CSS", "JavaScript"],
+  backend:  ["PHP", "MySQL"],
+  tools:    ["Git", "GitHub", "XAMPP"],
+  next:     "APIs, then React"
+};</code></pre>
+                </aside>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container narrow">
+                <h2>About me</h2>
+                <p>I'm a student developer learning to build complete web applications, from the page a visitor sees to
+                    the database behind it. <!-- EDIT: add your programme and institution if you want them shown. -->
+                </p>
+                <p>I enjoy turning real-world problems, such as managing student accommodation, into working systems.
+                    I'm currently focused on PHP and MySQL, and I'm aiming for a full-stack developer role.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt">
+            <div class="container">
+                <h2>Skills</h2>
+                <p class="lead">Grouped by how I use them today.</p>
+                <div class="skill-groups">
+                    <div class="skill-group">
+                        <h3>Working with</h3>
+                        <ul class="chips">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Git &amp; GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Learning</h3>
+                        <ul class="chips">
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>XAMPP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Next</h3>
+                        <ul class="chips">
+                            <li>APIs</li>
+                            <li>React</li>
+                            <li>Next.js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <p class="lead">Replace these cards with your strongest real work. Add a screenshot to
+                    <code>images/projects/</code> for each.</p>
+                <div class="project-grid">
+
+                    <article class="card project">
+                        <div class="shot">Screenshot</div>
+                        <h3>Student Accommodation System</h3>
+                        <p>A system for listing rooms and managing student bookings, replacing paper records and message
+                            threads.</p>
+                        <p class="tech">PHP · MySQL · HTML · CSS</p>
+                        <div class="btn-row">
+                            <a class="btn btn-small" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank"
+                                rel="noopener">GitHub</a>
+                            <!-- Add a Live Demo link only once the project is hosted on a PHP/MySQL host. -->
+                        </div>
+                    </article>
+
+                    <article class="card project">
+                        <div class="shot">Screenshot</div>
+                        <h3>Personal Portfolio</h3>
+                        <p>This site: a responsive single-page portfolio with mobile navigation, a dark mode and a
+                            validated contact form.</p>
+                        <p class="tech">HTML · CSS · JavaScript</p>
+                        <div class="btn-row">
+                            <a class="btn btn-small" href="https://YOUR-SITE.netlify.app" target="_blank"
+                                rel="noopener">Live demo</a>
+                            <a class="btn btn-small" href="https://github.com/YOUR-USERNAME/doreen-portfolio"
+                                target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card project">
+                        <div class="shot">Screenshot</div>
+                        <h3>CRAMBOT-AI</h3>
+                        <p>CRAMBOT-AI is a mobile application designed to transform the way students study and prepare
+                            for examinations. By leveraging Artificial Intelligence (AI), the app allows students to
+                            upload their lecture slides or course materials and receive instant, intelligent feedback —
+                            including auto-generated examination questions, summaries, and knowledge assessments.
+                            The application serves as both a personal study assistant and an educational knowledge base,
+                            making learning more interactive, efficient, and self-directed.
+                        </p>
+                        <p class="tech">CRAMBOT-AI is the next project in progress</p>
+                        <div class="btn-row">
+                            <a class="btn btn-small" href="#contact">Get in touch</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="credentials" class="section alt">
+            <div class="container narrow">
+                <h2>Credentials</h2>
+                <article class="card credential">
+                    <h3>IBM Web Development Credential</h3>
+                    <p>Demonstrates learning and practical knowledge related to web development.</p>
+                    <a class="btn btn-small" href=" https://lnkd.in/dZnU9jN7" target="_blank" rel="noopener">View
+                        credential</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container narrow">
+                <h2>Contact</h2>
+                <p class="lead">Interested in working together or have a question? Send a message.</p>
+                <form id="contactForm" novalidate>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                    <p class="error" id="nameError" role="alert"></p>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                    <p class="error" id="emailError" role="alert"></p>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <p class="error" id="messageError" role="alert"></p>
+
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <p class="form-status" id="formStatus" role="status"></p>
+                </form>
+                <p class="links">
+                    <a href="atsemdoreen34@gmail.com">Email Address</a> ·
+                    <a href="https://www.linkedin.com/in/doreen-atsem" target="_blank" rel="noopener">LinkedIn</a> ·
+                    <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Doreen Atsem. Built with HTML, CSS and JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
